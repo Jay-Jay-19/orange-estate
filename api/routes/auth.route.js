@@ -1,5 +1,5 @@
 import express from 'express';
-import { signin, signup } from '../controllers/auth.controller.js';
+import { google, signin, signup } from '../controllers/auth.controller.js';
 
 const router = express.Router();
 
@@ -7,5 +7,7 @@ const router = express.Router();
 router.post('/signup', signup);
 // Création de la route /signin qui fera appel à la fonction signin crée dans la page auth.controller.js
 router.post('/signin', signin);
+
+router.post('/google', google);
 
 export default router;
