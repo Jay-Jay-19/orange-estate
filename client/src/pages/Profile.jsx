@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useRef, useState, useEffect } from 'react';
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from 'firebase/storage';
 import { app } from '../firebase.js';
-import { updateUserStart, updateUserSuccess, updateUserFailure, deleteUserFailure, deleteUserStart, deleteUserSuccess } from '../redux/user/userSlice.js';
+import { updateUserStart, updateUserSuccess, updateUserFailure, deleteUserFailure, deleteUserStart, deleteUserSuccess, signOutUserStart } from '../redux/user/userSlice.js';
 
 export default function Profile() {
   const fileRef = useRef(null);
@@ -94,6 +94,21 @@ export default function Profile() {
     }
   };
 
+  const handleSignOut = async () => {
+    try {
+      dispatch(signOutUserStart());
+      const res = await fetch('/api/auth/signout');
+      const data = await res.json();
+      if (data.success === false) {
+        dispatch(deleteUserFailure(data.message));
+        return;
+      }
+      dispatch(deleteUserSuccess(data));
+    } catch (error) {
+      dispatch(deleteUserFailure(data.message));
+    }
+  }
+
   return (
     <div className='p-3 max-w-lg mx-auto'>
       <h1 className='text-3xl font-semibold text-center my-7'>Profile</h1>
@@ -162,7 +177,7 @@ export default function Profile() {
         <button onClick={handleDeleteUser} className='text-white bg-red-600 rounded-lg p-3 font-semibold hover:opacity-85'>
           Delete account
         </button>
-        <button className='text-slate-700 bg-white rounded-lg p-3 font-semibold hover:opacity-85'>
+        <button onClick={handleSignOut} className='text-slate-700 bg-white rounded-lg p-3 font-semibold hover:opacity-85'>
           Sign out
         </button>
       </div>
