@@ -40,8 +40,7 @@ export default function Profile() {
         setFileUploadError(true);
       },
       () => {
-        getDownloadURL(uploadTask.snapshot.ref).then
-        ((downloadURL) =>
+        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) =>
           setFormData({ ...formData, avatar: downloadURL})
         );
       }
