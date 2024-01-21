@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom'
 import { useRef, useState, useEffect } from 'react';
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from 'firebase/storage';
 import { app } from '../firebase.js';
@@ -171,6 +172,9 @@ export default function Profile() {
         >
           {loading ? 'loading...' : 'Update'}
         </button>
+        <Link className='bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-90' to={"/create-listing"}>
+          Create listing
+        </Link>
       </form>
       <div className='flex justify-between mt-10'>
         <button onClick={handleDeleteUser} className='text-white bg-red-600 rounded-lg p-3 font-semibold hover:opacity-85'>
