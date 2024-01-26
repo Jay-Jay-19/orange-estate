@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { HiArrowCircleRight } from 'react-icons/hi'
+import { HiArrowRight } from 'react-icons/hi'
 import { useEffect, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -55,23 +55,23 @@ export default function Home() {
   return (
     <div>
       {/*  top */}
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-        <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
-          Find your next <span className='text-slate-500'>perfect</span>
+      <div className='flex flex-col gap-6 p-24 px-3 max-w-6xl mx-auto'>
+        <h1 className='font-bold text-3xl lg:text-6xl'>
+          Find your next <span className='text-orange-500'>perfect</span>
           <br />
-          place with <span className='text-slate-500'>ease</span>.
+          place with <span className='text-orange-500'>ease</span>.
         </h1>
-        <div className='text-gray-400 text-xs sm:text-sm'>
+        <div className='text-gray-800 text-sm md:text-md'>
           Let Orange Estate find your next perfect place to live that you will call home.
           <br />
           We focus on searching and proposing a wide range of quality properties for you to choose from.
         </div>
         <Link
           to={'/search'}
-          className='flex items-center text-xs sm:text-sm text-orange-500 font-bold gap-1'
+          className='flex items-center text-sm md:text-md font-bold gap-1 hover:scale-95 transition-scale duration-300'
         >
-          Let's get started
-          <HiArrowCircleRight />
+          Let's get <span className='text-orange-500'>started</span>
+          <HiArrowRight />
         </Link>
       </div>
 
@@ -98,9 +98,10 @@ export default function Home() {
         {offerListings && offerListings.length > 0 && (
           <div className=''>
             <div className='my-3'>
-              <h2 className='text-2xl font-semibold text-slate-600'>Recent offers</h2>
-              <Link to={'/search?offer=true'} className='text-sm text-blue-800'>
+              <h2 className='text-2xl font-semibold'>Recent offers</h2>
+              <Link to={'/search?offer=true'} className='text-sm text-gray-600 flex items-center gap-1 hover:font-bold'>
                 show more offers
+                <HiArrowRight />
               </Link>
             </div>
             <div className='flex flex-wrap gap-4'>
@@ -113,9 +114,10 @@ export default function Home() {
         {rentListings && rentListings.length > 0 && (
           <div className=''>
             <div className='my-3'>
-              <h2 className='text-2xl font-semibold text-slate-600'>Recent places for rent</h2>
-              <Link to={'/search?type=rent'} className='text-sm text-blue-800'>
+              <h2 className='text-2xl font-semibold'>Recent places for rent</h2>
+              <Link to={'/search?type=rent'} className='text-sm text-gray-600 flex items-center gap-1 hover:font-bold'>
                 show more places for rent
+                <HiArrowRight />
               </Link>
             </div>
             <div className='flex flex-wrap gap-4'>
@@ -128,9 +130,10 @@ export default function Home() {
         {saleListings && saleListings.length > 0 && (
           <div className=''>
             <div className='my-3'>
-              <h2 className='text-2xl font-semibold text-slate-600'>Recent places for sale</h2>
-              <Link to={'/search?type=sale'} className='text-sm text-blue-800'>
+              <h2 className='text-2xl font-semibold'>Recent places for sale</h2>
+              <Link to={'/search?type=sale'} className='text-sm text-gray-600 flex items-center gap-1 hover:font-bold'>
                 show more places for sale
+                <HiArrowRight />
               </Link>
             </div>
             <div className='flex flex-wrap gap-4'>

@@ -123,86 +123,86 @@ export default function Search() {
           className='flex flex-col gap-8'
         >
           <div className='flex items-center gap-2'>
-            <label className='whitespace-nowrap font-semibold'>Search term :</label>
+            <label className='whitespace-nowrap font-semibold'>Search term</label>
             <input
               type='text'
               id='searchTerm'
               placeholder='Search...'
-              className='border rounded-lg p-3 w-full'
+              className='border p-3 w-full'
               value={sidebardata.searchTerm}
               onChange={handleChange}
             />
           </div>
-          <div className='flex gap-2 flex-wrap items-center'>
-            <label className='font-semibold'>Type :</label>
-            <div className='flex gap-2'>
+          <div className='flex gap-4 flex-wrap items-center'>
+            <label className='font-semibold mr-2'>Type</label>
+            <div className='flex gap-1'>
               <input
                 type='checkbox'
                 id='all'
-                className='w-5'
+                className='w-4'
                 onChange={handleChange}
                 checked={sidebardata.type === 'all'}
               />
               <span>Rent & Sale</span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-1'>
               <input
                 type='checkbox'
                 id='rent'
-                className='w-5'
+                className='w-4'
                 onChange={handleChange}
                 checked={sidebardata.type === 'rent'}
               />
               <span>Rent</span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-1'>
               <input
                 type='checkbox'
                 id='sale'
-                className='w-5'
+                className='w-4'
                 onChange={handleChange}
                 checked={sidebardata.type === 'sale'}
               />
               <span>Sale</span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-1'>
               <input
                 type='checkbox'
                 id='offer'
-                className='w-5'
+                className='w-4'
                 onChange={handleChange}
                 checked={sidebardata.offer}
               />
               <span>Offer</span>
             </div>
           </div>
-          <div className='flex gap-2 flex-wrap items-center'>
-            <label className='font-semibold'>Amenities :</label>
-            <div className='flex gap-2'>
+          <div className='flex gap-4 flex-wrap items-center'>
+            <label className='font-semibold mr-2'>Amenities</label>
+            <div className='flex gap-1'>
               <input
                 type='checkbox'
                 id='parking'
-                className='w-5'
+                className='w-4'
                 onChange={handleChange}
                 checked={sidebardata.parking}
               />
               <span>Parking</span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-1'>
               <input
                 type='checkbox'
                 id='furnished'
-                className='w-5'
+                className='w-4'
                 onChange={handleChange}
                 checked={sidebardata.furnished}
               />
-              <span>furnished</span>
+              <span>Furnished</span>
             </div>
           </div>
           <div className='flex items-center gap-2'>
-            <label className='font-semibold'>Sort :</label>
+            <label className='font-semibold'>Sort</label>
             <select
-              className='border rounded-lg p-3'
+              className='border p-3'
               id='sort_order'
               onChange={handleChange}
               defaultValue={'created_at_desc'}
@@ -213,11 +213,11 @@ export default function Search() {
               <option value='createdAt_asc'>Oldest</option>
             </select>
           </div>
-          <button className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95'>Search</button>
+          <button className='bg-black text-white text-xl uppercase p-3 hover:opacity-85'>search</button>
         </form>
       </div>
       <div className='flex-1'>
-        <h1 className='text-3xl font-semibold border-b p-3 text-slate-700 mt-5'>Listing results :</h1>
+        <h1 className='text-3xl font-bold border-b p-7 mt-1 uppercase'>listing results</h1>
         <div className='p-7 flex flex-wrap gap-4'>
           {!loading && listings.length === 0 && (
             <p className='text-slate-700 text-xl'>No listing found.</p>

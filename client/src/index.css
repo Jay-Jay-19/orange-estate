@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body{
-  background-color: rgb(234, 239, 234);
+  font-family: 'Ysabeau Office', sans-serif;
 }

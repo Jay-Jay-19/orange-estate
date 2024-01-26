@@ -6,6 +6,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css/bundle';
 import { useSelector } from 'react-redux';
 import { FaBath, FaBed, FaChair, FaMapMarkedAlt, FaMapMarkerAlt, FaParking, FaShare } from 'react-icons/fa';
+import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import Contact from '../components/Contact';
 
 export default function Listing() {
@@ -79,7 +80,7 @@ export default function Listing() {
             </p>
           )}
           <div className='flex flex-col max-w-4xl mx-auto p-3 my-7 gap-4'>
-            <p className='text-4xl font-bold'>
+            <p className='text-5xl font-bold'>
               {listing.name}
             </p>
             <p className='text-2xl font-semibold'>
@@ -87,26 +88,27 @@ export default function Listing() {
               €
               {listing.type === 'rent' && ' / month'}
             </p>
-            <p className='flex items-center mt-6 gap-2 text-slate-600 text-sm'>
-              <FaMapMarkerAlt className='text-green-700' />
+            <p className='flex items-center mt-3 gap-2 text-gray-500'>
+              <FaMapMarkerAlt className='text-orange-500 text-lg' />
               {listing.address}
             </p>
             <div className='flex gap-4'>
-              <p className='bg-red-800 w-full max-w-[200px] text-white text-center p-1 rounded-md'>
+              <p className='bg-black w-full max-w-[150px] text-white text-center p-1'>
                 {listing.type === 'rent' ? 'For rent' : 'For sale' }
               </p>
               {
                 listing.offer && (
-                  <p className='bg-yellow-400 w-full max-w-[200px] text-white font-semibold text-center p-1 rounded-md'>{(+listing.regularPrice - +listing.discountPrice).toLocaleString('fr-FR')}€ discount
+                  <p className='bg-orange-500 w-full max-w-[175px] text-white font-semibold text-center p-1'>
+                    {(+listing.regularPrice - +listing.discountPrice).toLocaleString('fr-FR')}€ discount
                   </p>
                 )
               }
             </div>
           <p className='font-semibold text-black'>Description</p>
-          <p className='text-slate-800 -mt-3'>
+          <p className='text-gray-800 -mt-3 text-justify'>
             {listing.description}
           </p>
-          <ul className='text-green-900 font-semibold text-sm flex flex-wrap items-center gap-4 sm:gap-6'>
+          <ul className='font-semibold text-sm flex flex-wrap items-center gap-4 sm:gap-6'>
             <li className='flex items-center gap-1 whitespace-nowrap'>
               <FaBed className='text-xl' />
               {listing.bedrooms > 1 ? `${listing.bedrooms} bedrooms ` : `${listing.bedrooms} bedroom `}
@@ -127,7 +129,7 @@ export default function Listing() {
           {currentUser && listing.userRef !== currentUser._id && !contact && (
             <button
               onClick={() => setContact(true)}
-              className='bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 p-3'
+              className='bg-black text-white uppercase hover:opacity-90 hover:font-bold p-3'
             >
               Contact landlord
             </button>
