@@ -173,13 +173,15 @@ export default function Profile() {
                 {`Uploading ${filePerc}%`}
               </span>
           ) : filePerc === 100 ? (
-            <span className='text-green-700'>
+            <span className='text-green-600'>
               Image successfully uploaded !
             </span>
           ) : (
             ""
           )}
         </p>
+        <p className='text-red-600 mt-5 text-center italic'>{error ? error : ''}</p>
+        <p className='text-green-600 mt-5 text-center italic'>{updateSuccess ? 'User is updated successfully !' : ''}</p>
         <input
           type='text'
           placeholder='username'
@@ -230,19 +232,15 @@ export default function Profile() {
           sign out
         </button>
       </div>
-
-      <p className='text-red-700 mt-5 text-center italic'>{error ? error : ''}</p>
-      <p className='text-green-700 mt-5 text-center italic'>{updateSuccess ? 'User is updated successfully !' : ''}</p>
       <button
         onClick={handleShowListings}
-        className='text-green-600 text-lg hover:font-bold w-full'
+        className='text-black text-md mt-5 uppercase hover:font-bold w-full'
       >
-        Show listings
+        ◈ Show listings ◈
       </button>
       <p className='text-red-700 mt-5'>
         {showListingsError ? 'Error showing listings' : ''}
       </p>
-      
       {userListings &&
         userListings.length > 0 && (
           <div className='flex flex-col gap-4'>
