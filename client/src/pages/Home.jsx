@@ -22,7 +22,7 @@ export default function Home() {
   useEffect(() => {
     const fetchOfferListings = async () => {
       try {
-        const res = await fetch('/api/listing/get?offer=true&limit=4');
+        const res = await fetch('/api/listing/get?offer=true&limit=5');
         const data = await res.json();
         setOfferListings(data);
         fetchRentListings();
@@ -32,7 +32,7 @@ export default function Home() {
     };
     const fetchRentListings = async () => {
       try {
-        const res = await fetch('/api/listing/get?type=rent&limit=4');
+        const res = await fetch('/api/listing/get?type=rent&limit=5');
         const data = await res.json();
         setRentListings(data);
         fetchSaleListings();
@@ -42,7 +42,7 @@ export default function Home() {
     };
     const fetchSaleListings = async () => {
       try {
-        const res = await fetch('api/listing/get?type=sale&limit=4');
+        const res = await fetch('api/listing/get?type=sale&limit=5');
         const data = await res.json();
         setSaleListings(data);
       } catch (error) {
@@ -55,20 +55,20 @@ export default function Home() {
   return (
     <div>
       {/*  top */}
-      <div className='flex flex-col gap-6 p-24 px-3 max-w-6xl mx-auto'>
+      <div className='flex flex-col gap-6 p-20 px-3 max-w-6xl mx-auto'>
         <h1 className='font-bold text-3xl lg:text-6xl'>
           Find your next <span className='text-orange-500'>perfect</span>
           <br />
           place with <span className='text-orange-500'>ease</span>.
         </h1>
-        <div className='text-gray-800 text-sm md:text-md'>
-          Let Orange Estate find your next perfect place to live that you will call home.
+        <div className='text-gray-800 text-md md:text-xl'>
+          Let Orange Estate find your dream home in the most magnificent places in the world.
           <br />
           We focus on searching and proposing a wide range of quality properties for you to choose from.
         </div>
         <Link
           to={'/search'}
-          className='flex items-center text-sm md:text-md font-bold gap-1 hover:scale-95 transition-scale duration-300'
+          className='flex items-center text-md md:text-lg font-bold gap-1 hover:scale-95 transition-scale duration-300'
         >
           Let's get <span className='text-orange-500'>started</span>
           <HiArrowRight />
