@@ -234,7 +234,7 @@ export default function Search() {
           {showMore && (
             <button
               onClick={onShowMoreClick}
-              className=' text-black text-center w-full'
+              className=' text-black text-center w-full hover:font-bold'
             >
               Show more
             </button>

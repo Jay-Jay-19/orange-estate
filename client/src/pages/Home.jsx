@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { HiArrowRight } from 'react-icons/hi'
+import { HiArrowRight, HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { useEffect, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -22,7 +22,7 @@ export default function Home() {
   useEffect(() => {
     const fetchOfferListings = async () => {
       try {
-        const res = await fetch('/api/listing/get?offer=true&limit=5');
+        const res = await fetch('/api/listing/get?offer=true&limit=7');
         const data = await res.json();
         setOfferListings(data);
         fetchRentListings();
@@ -76,11 +76,11 @@ export default function Home() {
       </div>
 
       {/*  Swiper */}
-      <Swiper navigation>
+      <Swiper navigation={{nextEl:'.button-next-slide', prevEl:'.button-prev-slide'}} className='relative group'>
         {offerListings &&
           offerListings.length > 0 &&
           offerListings.map((listing) => (
-            <SwiperSlide>
+            <SwiperSlide key={listing}>
               <div
                 style={{
                   background: `url(${listing.imageUrls[0]}) center no-repeat`,
@@ -90,7 +90,15 @@ export default function Home() {
                 key={listing._id}
               ></div>
             </SwiperSlide>
-          ))}
+          ))
+        }
+        <div className='top-[50%] absolute z-10 button-prev-slide group-hover:left-0 -left-[23rem] duration-300 w-[40px] h-[40px] bg-black opacity-70 cursor-pointer text-white text-sm grid place-items-center'>
+          <HiOutlineArrowNarrowLeft />
+        </div>
+        <div className='top-[50%] absolute z-10 button-next-slide group-hover:right-0 -right-[23rem] duration-300 w-[40px] h-[40px] bg-black opacity-70 cursor-pointer text-white grid place-items-center'>
+          {" "}
+          <HiOutlineArrowNarrowRight />
+        </div>
       </Swiper>
 
       {/* Listing results for offer, sale and rent */}

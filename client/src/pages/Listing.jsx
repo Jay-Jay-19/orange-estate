@@ -6,6 +6,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css/bundle';
 import { useSelector } from 'react-redux';
 import { FaBath, FaBed, FaChair, FaMapMarkerAlt, FaParking, FaShare } from 'react-icons/fa';
+import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import Contact from '../components/Contact';
 
 export default function Listing() {
@@ -48,7 +49,7 @@ export default function Listing() {
       )}
       {listing && !loading && !error && (
         <div>
-          <Swiper navigation>
+          <Swiper navigation={{nextEl:'.button-next-slide', prevEl:'.button-prev-slide'}} className='relative group'>
             {listing.imageUrls.map((url) => ( 
               <SwiperSlide key={url}>
                 <div
@@ -60,6 +61,13 @@ export default function Listing() {
                 ></div>
               </SwiperSlide>
             ))}
+            <div className='top-[50%] absolute z-10 button-prev-slide group-hover:left-0 -left-[23rem] duration-300 w-[40px] h-[40px] bg-black opacity-70 cursor-pointer text-white text-sm grid place-items-center'>
+              <HiOutlineArrowNarrowLeft />
+            </div>
+            <div className='top-[50%] absolute z-10 button-next-slide group-hover:right-0 -right-[23rem] duration-300 w-[40px] h-[40px] bg-black opacity-70 cursor-pointer text-white grid place-items-center'>
+              {" "}
+              <HiOutlineArrowNarrowRight />
+            </div>
           </Swiper>
           <div className='fixed top-[13%] right-[3%] z-10 border rounded-full w-12 h-12 flex justify-center items-center bg-slate-100 cursor-pointer'>
             <FaShare
