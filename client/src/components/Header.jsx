@@ -26,16 +26,16 @@ export default function Header() {
 
   return (
     <header className='bg-black shadow-lg sticky top-0 z-10'>
-      <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
+      <div className='flex justify-between items-center max-w-6xl mx-auto p-2'>
         <Link to='/'>
-          <h1 className='text-xl sm:text-3xl flex flex-wrap'>
+          <h1 className='text-lg sm:text-2xl flex flex-wrap'>
             <span className='text-orange-400'>Orange</span>
             <span className='text-white'>Estate</span>
           </h1>
         </Link>
         <form
           onSubmit={handleSubmit}
-          className='bg-slate-100 p-3 flex items-center'
+          className='bg-slate-100 p-1 rounded-sm flex items-center'
         >
           <input
             type='text'
@@ -48,7 +48,7 @@ export default function Header() {
             <FaSearch />
           </button>
         </form>
-        <ul className='flex gap-4 text-lg text-white items-center'>
+        <ul className='flex gap-4 text-md text-white items-center'>
           <Link to='/'>
             <li className='hidden sm:inline hover:font-bold'>home</li>
           </Link>
@@ -57,7 +57,7 @@ export default function Header() {
           </Link>
           <Link to='/profile'>
             {currentUser ? (
-              <img className='rounded-full h-10 w-10 object-cover' src={currentUser.avatar} alt='profile' />
+              <img className='rounded-full h-8 w-8 object-cover' src={currentUser.avatar} alt='profile' />
             ) : (
               <li className='hover:font-bold'>sign in</li>
             )}
