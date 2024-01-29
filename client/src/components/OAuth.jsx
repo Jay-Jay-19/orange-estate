@@ -3,6 +3,7 @@ import { app } from '../firebase';
 import { useDispatch } from 'react-redux';
 import { signInSuccess } from '../redux/user/userSlice';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/google-logo.png';
 
 export default function OAuth() {
   const dispatch = useDispatch();
@@ -36,9 +37,14 @@ export default function OAuth() {
     <button
       onClick={handleGoogleClick}
       type='button'
-      className='bg-orange-500 text-white p-3 uppercase hover:font-bold hover:opacity-90'
+      className='bg-orange-500 text-white p-3 items-center justify-center uppercase hover:font-bold hover:opacity-95 flex gap-2'
     >
-      Continue with Google
+      Continue with
+    <img
+      src={logo}
+      alt='google logo'
+      className='h-8 w-8'
+    />
     </button>
   );
 }
