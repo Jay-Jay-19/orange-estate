@@ -12,15 +12,21 @@ export default function Contact({listing}) {
   useEffect(() => {
     const fetchLandlord = async () => {
       try {
+        console.log('Fetching landlord with userRef:', listing.userRef);
         const res = await fetch(`/api/user/${listing.userRef}`);
         const data = await res.json();
+        console.log('Landlord data', data);
         setLandlord(data);
       } catch (error) {
         console.log(error);
       }
     }
     fetchLandlord();
-  }, [listing.userRef])
+  }, [listing.userRef]);
+
+  console.log('Listing:', listing);
+  console.log('Landlord:', landlord);
+
   return (
     <>
       {landlord && (
