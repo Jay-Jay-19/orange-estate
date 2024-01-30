@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Contact({listing}) {
+export default function Contact({ listing }) {
   const [landlord, setLandlord] = useState(null);
   const [message, setMessage] = useState('');
 
@@ -18,7 +18,7 @@ export default function Contact({listing}) {
       } catch (error) {
         console.log(error);
       }
-    }
+    };
     fetchLandlord();
   }, [listing.userRef]);
 
@@ -35,7 +35,7 @@ export default function Contact({listing}) {
           <textarea
             name='message'
             id='message'
-            rows='2'
+            rows='3'
             value={message}
             onChange={onChange}
             placeholder='Enter your message here...'
@@ -51,5 +51,5 @@ export default function Contact({listing}) {
         </div>
       )}
     </>
-  )
+  );
 }
