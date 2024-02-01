@@ -42,7 +42,11 @@
 <!-- ABOUT THE PROJECT -->
 ## ✨ About the project
 <p>
-  Real Estate website with jwt, Google authentication and redux toolkit.
+  I tried to build a basic yet modern real estate website using MERN stack and redux toolkit. What I learned and implemented over the course of this project :
+    🔑 Authentication: implement JWT, Firebase, and Google OAuth for secure and seamless user access.
+    🏡 CRUD Operations: Create, read, update, and delete property listings using MongoDB.
+    💡 User-friendly Features: improve the user experience with image uploads, property listing management, etc...
+    🚀 Advanced Search Functionality: implement search and sort features to help users find what they're looking for.
 </p>
 
 ### Screencapture:
