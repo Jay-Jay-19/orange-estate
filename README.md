@@ -1,6 +1,6 @@
 <!-- HEADER -->
 <div align="center">
-  <img src="./assets/logo-readme.png" alt="Logo" width="600">
+  <img src="./client/src/assets/logo-readme.png" alt="Logo" width="600">
   
   <p align="center">
   <a href="#about-the-project">About the project</a> &nbsp;&bull;&nbsp;
