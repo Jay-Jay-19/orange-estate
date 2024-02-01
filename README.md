@@ -105,24 +105,6 @@ Then, you'll be able to __visit the app__ at:
 |
 └── .gitignore
 ```
-<br>
-
-<!-- TEST -->
-## 🧪 Test
-To __run tests__, run the following command:
-
-`npm test`  
-
-Then, press:
-`a`
-
-It will launch the __following tests:__
-1. the home page should render a heading, a logo and a table;
-2. the "Go!" button should be clickable;
-3. the table should have four columns (one for button included);
-4. the table should have the correct column headers titles;
-5. clicking the "Go!" button should decrease the number of trainings to start;
-6. clicking the "Go!" button should increase the number of trainings won or defeat;
 
 <br>
 
