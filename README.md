@@ -49,7 +49,7 @@
     🚀 Advanced Search Functionality: implement search and sort features to help users find what they're looking for.
 </p>
 
-### Screencapture:
+### Demo:
 <p align="center">
 <img alt="app demo" src='./assets/screencapture.gif')>
 </p>
