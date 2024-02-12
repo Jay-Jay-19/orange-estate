@@ -40,7 +40,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## ✨ About the project
+## ✨ ABOUT THE PROJECT
 <p>
   I tried to build a basic yet modern real estate website using MERN stack and redux toolkit. What I learned and implemented over the course of this project :<br />
     🔑 Authentication: implement JWT, Firebase, and Google OAuth for secure and seamless user access.<br />
@@ -49,31 +49,29 @@
     🚀 Advanced Search Functionality: implement search and sort features to help users find what they're looking for.
 </p>
 
-### Demo:
-<p align="center">
-<img alt="app demo" src='./assets/screencapture.gif')>
-</p>
+### Demo
+https://github.com/Jay-Jay-19/orange-estate/assets/135040221/22fc44ba-989a-405c-9178-5ddea4416e5a
 
-### Built with:
+### Built with
 - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 <br>
 
 <!-- GETTING STARTED -->
-## 🛠 Getting Started
+## 🛠 GETTING STARTED
 Clone down this repository.
 
-### Prerequisites:
+### Prerequisites
 You will need `node` and `npm` installed globally on your machine.  
 
-### Installation:
+### Installation
 
 `npm install` 
 <p></p><br>
 
 <!-- USAGE -->
-## 🥋 Usage
+## 🥋 USAGE
 
 To launch the project, you'll first have to __start the server__ with this command:
 
@@ -84,6 +82,6 @@ Then, you'll be able to __visit the app__ at:
 `localhost:3000`
 
 <!-- DOCUMENTATION -->
-## 📚 Documentation
+## 📚 DOCUMENTATION
 - [Tailwind documentation](https://tailwindcss.com/)
 - [React.js documentation](https://beta.reactjs.org/)
