@@ -49,10 +49,17 @@
     🚀 Advanced Search Functionality: implement search and sort features to help users find what they're looking for.
 </p>
 
-### Demo
-https://github.com/Jay-Jay-19/orange-estate/assets/135040221/22fc44ba-989a-405c-9178-5ddea4416e5a
+### DEMO
 
-### Built with
+### Navigation & Search
+
+
+https://github.com/Jay-Jay-19/orange-estate/assets/135040221/f73b10f8-19ce-47d2-902c-847d35bb05e8
+
+
+
+
+### BUILT WITH
 - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
