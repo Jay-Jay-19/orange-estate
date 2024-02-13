@@ -59,6 +59,11 @@ https://github.com/Jay-Jay-19/orange-estate/assets/135040221/f73b10f8-19ce-47d2-
 
 https://github.com/Jay-Jay-19/orange-estate/assets/135040221/80e5fa16-e2a5-45f7-b0d2-93845e9314b5
 
+### Responsive design
+
+https://github.com/Jay-Jay-19/orange-estate/assets/135040221/8b0cfa85-e232-4b85-8f90-cc16c7380c80
+
+
 ### BUILT WITH
 - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
