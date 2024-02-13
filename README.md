@@ -53,11 +53,11 @@
 
 ### Navigation & Search
 
-
 https://github.com/Jay-Jay-19/orange-estate/assets/135040221/f73b10f8-19ce-47d2-902c-847d35bb05e8
 
+### Search bar, Authentication & Listing creation
 
-
+https://github.com/Jay-Jay-19/orange-estate/assets/135040221/80e5fa16-e2a5-45f7-b0d2-93845e9314b5
 
 ### BUILT WITH
 - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
