@@ -61,7 +61,7 @@ https://github.com/Jay-Jay-19/orange-estate/assets/135040221/80e5fa16-e2a5-45f7-
 
 ### Responsive design
 
-https://github.com/Jay-Jay-19/orange-estate/assets/135040221/8b0cfa85-e232-4b85-8f90-cc16c7380c80
+https://github.com/Jay-Jay-19/orange-estate/assets/135040221/7b7d2f3a-5251-4ae5-82ca-7aabf0fbc8b4
 
 
 ### BUILT WITH
