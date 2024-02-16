@@ -59,7 +59,7 @@ https://github.com/Jay-Jay-19/orange-estate/assets/135040221/f73b10f8-19ce-47d2-
 <img src="https://github.com/Jay-Jay-19/orange-estate/assets/135040221/019b88b7-fa5a-4306-a50f-8289157680f2" width=3% height=3%>
 </p>
 
-$${\color{lightblue}Tips \space : \space activate \space sound \space for \space better \space experience \space !}$$
+$${\color{orange}Tips \space : \space activate \space sound \space for \space better \space experience \space !}$$
 
 ### Search bar, Authentication & Listing creation
 
@@ -69,7 +69,7 @@ https://github.com/Jay-Jay-19/orange-estate/assets/135040221/80e5fa16-e2a5-45f7-
 <img src="https://github.com/Jay-Jay-19/orange-estate/assets/135040221/019b88b7-fa5a-4306-a50f-8289157680f2" width=3% height=3%>
 </p>
 
-$${\color{lightblue}Tips \space : \space activate \space sound \space for \space better \space experience \space !}$$
+$${\color{orange}Tips \space : \space activate \space sound \space for \space better \space experience \space !}$$
 
 ### Responsive design
 
@@ -79,7 +79,7 @@ https://github.com/Jay-Jay-19/orange-estate/assets/135040221/7b7d2f3a-5251-4ae5-
 <img src="https://github.com/Jay-Jay-19/orange-estate/assets/135040221/019b88b7-fa5a-4306-a50f-8289157680f2" width=3% height=3%>
 </p>
 
-$${\color{lightblue}Tips \space : \space activate \space sound \space for \space better \space experience \space !}$$
+$${\color{orange}Tips \space : \space activate \space sound \space for \space better \space experience \space !}$$
 
 ### BUILT WITH
 - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
