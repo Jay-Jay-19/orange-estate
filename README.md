@@ -50,6 +50,8 @@
 </p>
 
 ### DEMO
+_Tips : activate sound for better experience_ <img src="https://github.com/Jay-Jay-19/orange-estate/assets/135040221/019b88b7-fa5a-4306-a50f-8289157680f2" width=3% height=3%>
+
 
 ### Navigation & Search
 
