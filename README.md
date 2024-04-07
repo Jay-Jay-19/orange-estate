@@ -10,43 +10,19 @@
   </p>
 
   <p align="center">
-    Real estate website.
+    REAL ESTATE WEBSITE 🏢
   </p>
 </div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a>
-      <ul>
-      </ul>
-    </li>
-    <li><a href="#documentation">Documentation</a></li>
-  </ol>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 ## ✨ ABOUT THE PROJECT
 <p>
-  I tried to build a basic yet modern real estate website using MERN stack and redux toolkit. What I learned and implemented over the course of this project :<br />
-    🔑 Authentication: implement JWT, Firebase, and Google OAuth for secure and seamless user access.<br />
-    🏡 CRUD Operations: create, read, update, and delete property listings using MongoDB.<br />
-    💡 User-friendly Features: improve the user experience with image uploads, property listing management, etc...<br />
-    🚀 Advanced Search Functionality: implement search and sort features to help users find what they're looking for.
+I tried to build a basic yet modern real estate website using MERN stack and redux toolkit. What I learned and implemented over the course of this project :<br />
+
+  - 🔑 Authentication : implement JWT, Firebase, and Google OAuth for secure and seamless user access.<br />
+  - 🏡 CRUD operations : create, read, update, and delete property listings using MongoDB.<br />
+  - 💡 User-friendly features : improve the user experience with image uploads, property listing management, etc...<br />
+  - 🚀 Advanced search functionality : implement search and sort features to help users find what they're looking for.
 </p>
 
 ### DEMO
